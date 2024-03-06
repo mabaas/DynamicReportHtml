@@ -1,0 +1,481 @@
+﻿@model Feedback270reportDemo.Models.Feedback270ViewModel; 
+@{
+    ViewData["Title"] = "Report Page";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <title>Untitled document</title>
+    <style>
+        .ssdpage {
+            position: relative;
+            border: solid 1pt black;
+            margin: 10pt auto 10pt auto;
+            overflow: hidden;
+        }
+
+        .ssddiv {
+            position: absolute;
+        }
+
+        .ssddivbar {
+            transform: translate(17pt, @ViewData["Bar"]);
+            color :greenyellow;
+            opacity : 70%;
+        }
+
+        .ssdspan {
+            position: absolute;
+            white-space: pre;
+        }
+
+        .ssdimg {
+            position: absolute;
+        }
+
+        .ssdsvg {
+            position: absolute;
+        }
+
+        .module {
+            stroke-dasharray : 7;
+        }
+
+        .cs1 {
+            font: 480pt 'Calibri';
+            color: #F2F2F2;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .cs2 {
+            font: 40pt 'Calibri';
+            color: #4D4A5B;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .cs3 {
+            font: 20pt 'Calibri';
+            color: #4D4A5B;
+            font-style: italic;
+        }
+
+        .cs4 {
+            font: 30pt 'Calibri';
+            color: #4D4A5B;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .cs5 {
+            font: 20pt 'Calibri';
+            color: #4D4A5B;
+        }
+
+        .cs6 {
+            font: 15pt 'Calibri';
+            color: #4D4A5B;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .cs7 {
+            font: 15pt 'Arial';
+            color: #F59E27;
+        }
+
+        .cs8 {
+            font: 15pt 'Calibri';
+            color: #4D4A5B;
+        }
+
+        .cs9 {
+            font: 15pt 'Calibri';
+            color: #F69E27;
+        }
+
+        .cs10 {
+            font: 13pt 'Calibri';
+            color: #4D4A5B;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .cs11 {
+            font: 12pt 'Calibri';
+            color: #4D4A5B;
+            font-weight: bold;
+        }
+
+        .cs12 {
+            font: 15pt 'Calibri';
+            color: #4D4A5B;
+            font-style: italic;
+        }
+
+        .cs13 {
+            font: 20pt 'Calibri';
+            color: #4D4A5B;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .cs14 {
+            font: 12pt 'Calibri';
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .cs15 {
+            font: 12pt 'Calibri';
+            color: #000000;
+        }
+
+        .cs16 {
+            font: 12pt 'Calibri';
+            color: #0000FF;
+        }
+
+        .td {
+            text-align: left;
+        }
+        .td.score {
+            text-align: right;
+            background-color: peachpuff;
+        }
+
+        .th {
+            text-align: left;
+            color: black;
+            padding: 4px 30px 4px 8px;
+        }
+
+        .tr {
+            border: 1px solid #808080;
+            padding: 4px 8px;
+        }
+
+        .table, th, td {
+            border: 1px solid black;
+            padding: 4px 8px;
+        }
+            .table.questions {
+                text-align = left;
+                background-color: peachpuff;
+                padding: 
+            }
+    </style>
+</head>
+<body>
+    <div class="ssdpage" style="width:610pt; height:889pt;">
+        <div class="ssddiv" style="left:-24.75pt; top:804.2pt; -webkit-transform:matrix(6.735557395310444E-17,-1.1,1,6.123233995736766E-17,0,0); -moz-transform:matrix(6.735557395310444E-17,-1.1,1,6.123233995736766E-17,0,0); -ms-transform:matrix(6.735557395310444E-17,-1.1,1,6.123233995736766E-17,0,0); -o-transform:matrix(6.735557395310444E-17,-1.1,1,6.123233995736766E-17,0,0); transform:matrix(6.735557395310444E-17,-1.1,1,6.123233995736766E-17,0,0);"><span class="ssdspan cs1" style="left:0pt; letter-spacing:18pt">2</span></div>
+        <div class="ssddiv" style="left:-24.75pt; top:804.2pt; -webkit-transform:matrix(6.123233995736766E-17,-1,1,6.123233995736766E-17,0,0); -moz-transform:matrix(6.123233995736766E-17,-1,1,6.123233995736766E-17,0,0); -ms-transform:matrix(6.123233995736766E-17,-1,1,6.123233995736766E-17,0,0); -o-transform:matrix(6.123233995736766E-17,-1,1,6.123233995736766E-17,0,0); transform:matrix(6.123233995736766E-17,-1,1,6.123233995736766E-17,0,0);"><span class="ssdspan cs1" style="left:293.9pt; letter-spacing:20pt">7</span><span class="ssdspan cs1" style="left:565.95pt; letter-spacing:20pt">0</span></div>
+        <div class="ssddiv" style="left:0pt; top:0pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:0pt; top:877pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:84.15pt; top:102.5pt;"><span class="ssdspan cs2" style="left:5.1pt">FEEDBACKRAPPORT</span></div>
+        <div class="ssddiv" style="left:84.15pt; top:157.65pt;">
+            <span class="ssdspan cs3" style="left:86.65pt">270 graden feedback</span>
+        </div>
+    </div>
+    <div class="ssdpage" style="width:610pt; height:889pt;">
+        <div class="ssddiv" style="left:0pt; top:0pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:0pt; top:877pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:42.85pt;"><span class="ssdspan cs4" style="left:0pt;">Feedback rapport van :</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:86.05pt;"><span class="ssdspan cs5" style="left:0pt;">@Model.User</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:131.1pt;"><span class="ssdspan cs6" style="left:0pt;">@Model.Name</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:156.50pt;"><span class="ssdspan cs8" style="left:0pt;">Datum: @ViewData["StartEndDate"]</span></div>
+
+        <div class="ssddiv" style="left:28.5pt; top:209.8pt;"><span class="ssdspan cs6" style="left:0pt;">@Model.ChaptersChallenge.ChallengeName</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:234.75pt;">
+            <ul>
+                @{ var hoofdstukken = Model.ChaptersChallenge.Chapters;}
+                @for (var i = 0; i < hoofdstukken.Count; i++)
+                {
+                    int tel = i + 1;
+                    <li>
+                        <span class="ssdspan cs8">Hoofdstuk @tel : @hoofdstukken[i].Name</span>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:399.15pt;"><span class="ssdspan cs6" style="left:0pt">Feedbackgevers :</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:423.90pt;">
+            <ul>
+                @{ var gevers = Model.Providers;}
+                @for (var i = 0; i < gevers.Length; i++)
+                {
+                    int tel = i + 1;
+                    <li>
+                        <span class="ssdspan cs8">@gevers[i].Name -  @gevers[i].Role</span>
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:578.70pt;"><span class="ssdspan cs6" style="left:0pt">Scoremogelijkheden:</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:603.40pt;"><span class="ssdspan cs9" style="left:0pt;">1.</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:603.40pt;"><span class="ssdspan cs8" style="left:24.5pt">@Model.ScoringLegenda._1</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:630.55pt;"><span class="ssdspan cs9" style="left:0pt;">2.</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:630.55pt;"><span class="ssdspan cs8" style="left:24.5pt">@Model.ScoringLegenda._2</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:657.40pt;"><span class="ssdspan cs9" style="left:0pt;">3.</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:657.40pt;"><span class="ssdspan cs8" style="left:24.5pt;">@Model.ScoringLegenda._3</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:684.45pt;"><span class="ssdspan cs9" style="left:0pt; letter-spacing:1pt">4.</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:684.45pt;"><span class="ssdspan cs8" style="left:24.5pt">@Model.ScoringLegenda._4</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:711.50pt;"><span class="ssdspan cs9" style="left:0pt;">5.</span></div>
+        <div class="ssddiv" style="left:28.5pt; top:711.50pt;"><span class="ssdspan cs8" style="left:24.5pt">@Model.ScoringLegenda._5</span></div>
+    </div>
+    <div class="ssdpage" style="width:610pt; height:889pt;">
+        <div class="ssddiv" style="left:0pt; top:0pt;">
+            <img class="ssdimg" style="width:610pt; height:12pt;" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:0pt; top:877pt;">
+            <img class="ssdimg" style="width:610pt; height:12pt;" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:42.85pt;"><span class="ssdspan cs4" style="left:0pt;">Samenvatting</span></div>
+        <div class="ssddiv" style="left:0pt; top:66.65pt;">
+            <span class="ssdspan cs8" style="left:0pt;">
+                Hieronder zie je de samenvatting van de gemiddelde scores van alle
+            </span>
+        </div>
+        <div class="ssddiv" style="left:0pt; top:85.65pt;">
+            <span class="ssdspan cs8" style="left:0pt;">
+                competenties en vraagonderwerpen. Op de volgende pagina’s wordt dit
+            </span>
+        </div>
+        <div class="ssddiv" style="left:0pt; top:103.6pt;">
+            <span class="ssdspan cs8" style="left:0pt;">
+                verder toegelicht met een uitsplitsing per stelling.
+            </span>
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:163.6pt;">
+                <table>
+                    <tr class="tr">
+                        <th class="th">Onderwerp</th>
+                        <th class="th">Jij</th>
+                    </tr>
+                    @for (var i = 0; i < hoofdstukken.Count; i++)
+                    {
+                        int tel = i + 1;
+                        <tr class="tr">
+                            <td class="td">Hoofdstuk @tel: @hoofdstukken[i].Name</td>
+                            <td class="td score">@hoofdstukken[i].MidScore </td>
+                        </tr>
+                    }
+                </table>
+        </div>
+        <div class="ssddiv" style="left:0pt; top:401.25pt;">
+            <span class="ssdspan cs8" style="left:0pt;">
+                De cijfers laten het gemiddelde zien van alle gegeven scores door de
+            </span>
+        </div>
+        <div class="ssddiv" style="left:0pt; top:419.2pt;">
+            <span class="ssdspan cs8" style="left:0pt;">
+                feedbackgevers en de stellingen onderliggend aan het thema.
+            </span>
+        </div>
+        <div class="ssddiv" style="left:0pt; top:470.2pt;">
+            <span class="ssdspan cs6" style="left:0pt">
+                Hoe presteer je?
+            </span>
+        </div>
+        <!-- Border -->
+        <div class="ssddiv" style="left:30.15pt; top:505.3pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="649" height="316" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-30.16874885559082,-505.32501220703125)"><path d=" M30.66874885559082,515.8250122070312 L30.71875,514.8000183105469 L30.875,513.8062744140625 L31.118749618530273,512.8500061035156 L31.456249237060547,511.9312744140625 L31.875,511.0562744140625 L32.375,510.23126220703125 L32.95624923706055,509.4625244140625 L33.599998474121094,508.75 L34.3125,508.10626220703125 L35.08124923706055,507.53125 L35.90625,507.03125 L36.77499771118164,506.6125183105469 L37.693748474121094,506.2750244140625 L38.65625,506.0250244140625 L39.64999771118164,505.875 L40.66874694824219,505.82501220703125 L505.99998664855957,505.82501220703125 L507.02498054504395,505.875 L508.0187244415283,506.0250244140625 L508.9749927520752,506.2750244140625 L509.8937244415283,506.6125183105469 L510.7687244415283,507.03125 L511.59373664855957,507.53125 L512.3624744415283,508.10626220703125 L513.0749378204346,508.75 L513.7187366485596,509.4625244140625 L514.2936878204346,510.23126220703125 L514.7936878204346,511.0562744140625 L515.2124500274658,511.9312744140625 L515.5499744415283,512.8500061035156 L515.7999744415283,513.8062744140625 L515.9499378204346,514.8000183105469 L515.9999866485596,515.8250122070312 L515.9999866485596,731.8249969482422 L515.9499378204346,732.8500061035156 L515.7999744415283,733.84375 L515.5499744415283,734.8000030517578 L515.2124500274658,735.71875 L514.7936878204346,736.59375 L514.2936878204346,737.4187469482422 L513.7187366485596,738.1875 L513.0749378204346,738.8937530517578 L512.3624744415283,739.5437469482422 L511.59373664855957,740.1187438964844 L510.7687244415283,740.6187438964844 L509.8937244415283,741.0375061035156 L508.9749927520752,741.375 L508.0187244415283,741.625 L507.02498054504395,741.7749938964844 L505.99998664855957,741.8249969482422 L40.66874694824219,741.8249969482422 L39.64999771118164,741.7749938964844 L38.65625,741.625 L37.693748474121094,741.375 L36.77499771118164,741.0375061035156 L35.90625,740.6187438964844 L35.08124923706055,740.1187438964844 L34.3125,739.5437469482422 L33.599998474121094,738.8937530517578 L32.95624923706055,738.1875 L32.375,737.4187469482422 L31.875,736.59375 L31.456249237060547,735.71875 L31.118749618530273,734.8000030517578 L30.875,733.84375 L30.71875,732.8500061035156 L30.66874885559082,731.8249969482422 L30.66874885559082,515.8250122070312 Z" stroke-width="1" stroke="#BFBFBF" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:43.9pt; top:716.7pt;">
+            <span class="ssdspan cs10" style="left:0pt;">Onder niveau</span>
+            <span class="ssdspan cs10" style="left:123.6pt;">Brons</span>
+            <span class="ssdspan cs10" style="left:266.5pt;">Zilver</span>
+            <span class="ssdspan cs10" style="left:398.85pt;">Goud</span>
+        </div>
+
+        <!-- Blocks -->
+        <div class="ssddiv" style="left:40.65pt; top:663pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="118" height="68" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-40.6515007019043,-663.0281982421875)"><path d=" M40.6515007019043,663.0281982421875 L40.6515007019043,713.6270980834961 L128.4652976989746,713.6270980834961 L128.4652976989746,663.0281982421875 L40.6515007019043,663.0281982421875 Z" fill="#C00000" fill-opacity="1" fill-rule="evenodd" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:57.3pt; top:680.5pt;"><span class="ssdspan cs11" style="left:0pt">0-2 punten</span></div>
+
+        <div class="ssddiv" style="left:415.05pt; top:525.55pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="117" height="55" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-415.09239959716797,-525.5906066894531)"><path d=" M415.09239959716797,525.5906066894531 L415.09239959716797,566.6667938232422 L502.50719451904297,566.6667938232422 L502.50719451904297,525.5906066894531 L415.09239959716797,525.5906066894531 Z" fill="#FFC000" fill-opacity="1" fill-rule="evenodd" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:414.55pt; top:525.05pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="118" height="57" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-414.59239959716797,-525.0906066894531)"><path d=" M415.09239959716797,525.5906066894531 L502.50719451904297,525.5906066894531 L502.50719451904297,566.6668395996094 L415.09239959716797,566.6668395996094 L415.09239959716797,525.5906066894531 Z" stroke-width="1" stroke="#FFC000" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:439.25pt; top:530.95pt;"><span class="ssdspan cs11" style="left:1.35pt">&gt;4,5 – 5</span></div>
+        <div class="ssddiv" style="left:439.25pt; top:546pt;"><span class="ssdspan cs11" style="left:2.9pt">punten</span></div>
+        <div class="ssddiv" style="left:280.45pt; top:566.65pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="117" height="63" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-280.49178314208984,-566.6667022705078)"><path d=" M280.49178314208984,566.6667022705078 L280.49178314208984,613.3332977294922 L367.90648651123047,613.3332977294922 L367.90648651123047,566.6667022705078 L280.49178314208984,566.6667022705078 Z" fill="#BFBFBF" fill-opacity="1" fill-rule="evenodd" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:279.95pt; top:566.15pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="118" height="64" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-279.99178314208984,-566.1667022705078)"><path d=" M280.49178314208984,566.6667022705078 L367.90657806396484,566.6667022705078 L367.90657806396484,613.3333282470703 L280.49178314208984,613.3333282470703 L280.49178314208984,566.6667022705078 Z" stroke-width="1" stroke="#BFBFBF" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:302.8pt; top:574.9pt;"><span class="ssdspan cs11" style="left:1.35pt">&gt;3 - &lt;4.5</span></div>
+        <div class="ssddiv" style="left:302.8pt; top:589.95pt;"><span class="ssdspan cs11" style="left:4.75pt">punten</span></div>
+        <div class="ssddiv" style="left:160.95pt; top:613.3pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="104" height="68" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-160.98461151123047,-613.3332977294922)"><path d=" M160.98461151123047,663.6965026855469 L160.98461151123047,613.3332977294922 L238.63941192626953,613.3332977294922 L238.63941192626953,663.6965026855469 L160.98461151123047,663.6965026855469 Z" fill="#C45A11" fill-opacity="1" fill-rule="evenodd" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:160.45pt; top:612.8pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="105" height="69" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-160.48461151123047,-612.8332977294922)"><path d=" M160.98461151123047,613.3332977294922 L238.63948822021484,613.3332977294922 L238.63948822021484,663.9318084716797 L160.98461151123047,663.9318084716797 L160.98461151123047,613.3332977294922 Z" stroke-width="1" stroke="#C45A11" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:181.85pt; top:623.6pt;"><span class="ssdspan cs11" style="left:5.8pt">2– &lt;3</span></div>
+        <div class="ssddiv" style="left:181.85pt; top:638.45pt;"><span class="ssdspan cs11" style="left:1.35pt">punten</span></div>
+        <div class="ssddiv" style="left:39.15pt; top:538.6pt;"><span class="ssdspan cs12" style="left:0pt">Jouw score:</span></div>
+        <div class="ssddiv" style="left:160.95pt; top:663.65pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="104" height="68" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-160.98461151123047,-663.6965026855469)"><path d=" M160.98461151123047,663.6965026855469 L160.98461151123047,714.2950973510742 L238.63941192626953,714.2950973510742 L238.63941192626953,663.6965026855469 L160.98461151123047,663.6965026855469 Z" fill="#F2F2F2" fill-opacity="1" fill-rule="evenodd" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:160.45pt; top:663.15pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="105" height="69" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-160.48461151123047,-663.1965026855469)"><path d=" M160.98461151123047,663.6965026855469 L238.63948822021484,663.6965026855469 L238.63948822021484,714.2950134277344 L160.98461151123047,714.2950134277344 L160.98461151123047,663.6965026855469 Z" stroke-width="1" stroke="#F2F2F2" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:279.95pt; top:612.4pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="117" height="134" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-279.9996871948242,-612.4297943115234)"><path d=" M279.9996871948242,612.4297943115234 L279.9996871948242,712.7229995727539 L367.4146041870117,712.7229995727539 L367.4146041870117,612.4297943115234 L279.9996871948242,612.4297943115234 Z" fill="#F2F2F2" fill-opacity="1" fill-rule="evenodd" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:279.45pt; top:611.9pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="118" height="136" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-279.4997787475586,-611.9297943115234)"><path d=" M279.9997787475586,612.4297943115234 L367.4145736694336,612.4297943115234 L367.4145736694336,712.723030090332 L279.9997787475586,712.723030090332 L279.9997787475586,612.4297943115234 Z" stroke-width="1" stroke="#F2F2F2" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:414.6pt; top:566.65pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="117" height="196" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-414.6003952026367,-566.6665954589844)"><path d=" M414.6003952026367,566.6665954589844 L414.6003952026367,713.2865905761719 L502.0151901245117,713.2865905761719 L502.0151901245117,566.6665954589844 L414.6003952026367,566.6665954589844 Z" fill="#F2F2F2" fill-opacity="1" fill-rule="evenodd" /></g></g></svg>
+        </div>
+        <div class="ssddiv" style="left:414.1pt; top:566.15pt">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="118" height="197" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-414.1003952026367,-566.1665954589844)"><path d=" M414.6003952026367,566.6665954589844 L502.0151901245117,566.6665954589844 L502.0151901245117,713.2865295410156 L414.6003952026367,713.2865295410156 L414.6003952026367,566.6665954589844 Z" stroke-width="1" stroke="#F2F2F2" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+        <!-- User score bar -->
+        <!--<div class="ssddiv" style="left:17.7pt; top: 564.85pt;">-->
+        <div class="ssddivbar">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="673" height="7" class="ssdsvg"><defs /><g transform="scale(1.33333)"><g transform="matrix(1,0,0,1,-17.749839782714844,-564.8865966796875)"><path d=" M19.999839782714844,567.1365966796875 L519.999870300293,567.1366882324219" stroke-width="4.5" stroke-dasharray=5 stroke="#7E7E7E" stroke-opacity="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" fill="none" /></g></g></svg>
+        </div>
+    </div>
+    <div class="ssdpage" style="width:610pt; height:889pt;">
+        <div class="ssddiv" style="left:0pt; top:0pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:0pt; top:877pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:42.85pt;">
+            <span class="ssdspan cs4" style="left:0pt;">Situatieschets</span>
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:86.15pt;">
+            <span class="ssdspan cs5" style="left:0pt">Jouw mening t.o.v. de gemiddelde score</span>
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:116.4pt;">
+            <span class="ssdspan cs8" style="left:0pt">
+                In onderstaande grafiek zie je jouw mening over een thema ten
+            </span>
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:134.3pt;">
+            <span class="ssdspan cs8" style="left:0pt">
+                opzichte van de gemiddelde score. De gemiddelde score is opgebouwd
+            </span>
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:152.25pt;">
+            <span class="ssdspan cs8" style="left:0pt">
+                uit de meningen en scores vanuit je collega’s en leidinggevende(n).
+            </span>
+        </div>
+        <!--<div class="ssddiv" style="left:21.3pt; top:221.35pt">
+            <img class="ssdimg" style="width:303pt; height:36pt" src="~/images/image3.jpg" />
+        </div>-->
+        <!--<div class="ssddiv" style="left:9.3pt; top:257.35pt">
+        <img class="ssdimg" style="width:497.3pt; height:366.35pt" src="~/images/image4.jpg" />-->
+        <!--<div class="ssddiv" style="left:25.45pt; top:260.35pt;">
+            <table class="table">
+                <tr class="tr">
+                    <th class="th">Onderwerp</th>
+                    <th class="th">Jij</th>
+                    <th class="th">Anderen</th>
+                </tr>
+                <tr class="tr">
+                    <td class="td">Hoofdstuk 1: Klantgerichtheid</td>
+                    <td class="td score"> 3.2 </td>
+                    <td class="td score"> 3.5</td>
+                </tr>
+                <tr class="tr">
+                    <td class="td">Hoofdstuk 2: Integriteit</td>
+                    <td class="td score"> 4.5 </td>
+                    <td class="td score"> 4.2 </td>
+                </tr>
+            </table>
+        </div>-->
+        <div class="ssddiv" style="left:25.45pt; top:260.35pt;">
+            <table>
+                <tr class="tr">
+                    <th class="th">Onderwerp</th>
+                    <th class="th">Jij</th>
+                    <th class="th">Anderen</th>
+                </tr>
+                @for (var i = 0; i < hoofdstukken.Count; i++)
+                {
+                    int tel = i + 1;
+                    <tr class="tr">
+                        <td class="td">Hoofdstuk @tel: @hoofdstukken[i].Name</td>
+                        <td class="td score">@hoofdstukken[i].MidScore </td>
+                        <td class="td score">@hoofdstukken[i].OriginScore </td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </div>
+
+    @for (var i = 0; i < hoofdstukken.Count; i++)
+    {
+<div class="ssdpage" style="width:610pt; height:889pt;">
+    <div class="ssddiv" style="left:0pt; top:0pt">
+        <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+    </div>
+    <div class="ssddiv" style="left:0pt; top:877pt">
+        <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+    </div>
+    <div class="ssddiv" style="left:28.5pt; top:42.85pt;"><span class="ssdspan cs4" style="left:0pt">Hoofdstuk: @hoofdstukken[i].Name</span></div>
+    <div class="ssddiv" style="left:28.5pt; top:98.15pt;"><span class="ssdspan cs5" style="left:0pt">Gemiddelde score: @hoofdstukken[i].MidScore</span></div>
+    <div class="ssddiv" style="left:28.5pt; top:157.9pt;"><span class="ssdspan cs5" style="left:0pt">Per stelling:</span></div>
+    <div class="ssddiv" style="left:28.5pt; top:197.9pt;">
+        @{ var vragen = hoofdstukken[i].Questions;}
+        @{ var midscore = hoofdstukken[i].MidScore;}
+        @{ var score = hoofdstukken[i].OriginScore;}
+
+        <table class="table">
+            @for (int count = 0; count < vragen.Length; count++)
+            {
+            <tbody>
+                <tr class="tr">
+                    <td class="td questions"> @vragen[count]</td>
+                    <td class="td score">@midscore</td>
+                </tr>
+            </tbody>
+            }
+            <tfoot>
+                <tr class="tr">
+                    <td class="td"></td>
+                    <td class="td score">@midscore</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    </div>
+    }
+    <div class="ssdpage" style="width:610pt; height:889pt;">
+        <div class="ssddiv" style="left:0pt; top:0pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:0pt; top:877pt">
+            <img class="ssdimg" style="width:610pt; height:12pt" src="~/images/image1.jpg" />
+        </div>
+        <div class="ssddiv" style="left:28.5pt; top:42.85pt;"><span class="ssdspan cs4" style="left:0pt">Open antwoorden</span></div>
+        <div class="ssddiv" style="left:31.85pt; top:98.15pt;"><span class="ssdspan cs5" style="left:0pt">Welke tips zou je willen meegeven?</span></div>
+        <div class="ssddiv" style="left:21.3pt; top:138.75pt"><span class="ssdspan cs8" >&bull; @ViewData["sugesties"]</span>
+
+        </div>
+    </div>
+</body>
+</html>
